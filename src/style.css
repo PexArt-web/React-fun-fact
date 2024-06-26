@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    background-color: #21222A ;
+    padding: 30px 25px;
+}
+.nav--icon{
+    height: 30px;
+    margin-right: 7px;
+}
+.nav--logo_text{
+    margin-right: auto;
+    color: #61DAFB;
+    font-weight: 700;
+    font-size: 22px;
+}
+.nav--title{
+    color: #DEEBF8;
+    font-weight: 600;
+}
+/* main content styles */
+main{
+    color: #ffffff;
+    background-color: #282035;
+    height: 100vh;
+    padding: 57px 27px;
+    background-image:url(./images/logo512.png);
+    background-repeat:no-repeat;
+    background-position:
+    right 75%;
+    
+
+}
+.main--title{
+    margin: 0;
+    font-size: 39px;
+
+    letter-spacing: -0.05em;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 39.05px;
+    line-height: 47px;
+}
+.main--facts{
+    margin-top: 45px;
+    margin-left: 40px;
+}
+.main--facts>li{
+    line-height: 19px;
+    padding-block: 10px;
+    max-width: 400px;
+}
+.main--facts>li::marker{
+    font-size: 1.4rem;
+    color: #61DAFB;
+}
