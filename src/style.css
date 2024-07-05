@@ -7,8 +7,14 @@
 nav{
     display: flex;
     align-items: center;
-    background-color: #21222A ;
+    background-color: #ffffff;
     padding: 30px 25px;
+    height: 60px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+nav.dark {
+    background-color: #21222A;
 }
 .nav--icon{
     height: 30px;
@@ -24,18 +30,82 @@ nav{
     color: #DEEBF8;
     font-weight: 600;
 }
+
+.toggler {
+    display: flex;
+    align-items: center;
+}
+
+.toggler p {
+    font-size: 0.625rem;
+    font-weight: 600;
+}
+
+.toggler--slider {
+    width: 25px;
+    height: 13px;
+    background-color: #2B283A;
+    border-radius: 2rem;
+    margin-inline: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #000000;
+    box-sizing: content-box;
+}
+
+nav.dark .toggler--slider {
+    border-color: #ffffff;
+    background-color: #F5F5F5;
+}
+
+.toggler--slider--circle {
+    height: 13px;
+    width: 13px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+nav.dark .toggler--slider--circle {
+    background-color: black;
+}
+
+.toggler--light {
+    color:#2B283A;
+}
+
+nav.dark .toggler--light {
+    color: #918E9B;
+}
+
+.toggler--dark {
+    color: #D5D4D8;
+}
+
+nav.dark .toggler-dark {
+    color: #FFFFFF;
+}
+
+nav.dark .toggler--slider {
+    justify-content: flex-end;
+}
 /* main content styles */
 main{
-    color: #ffffff;
-    background-color: #282035;
+    color:#2B283A;
+    background-color:#ffff;
     height: 100vh;
     padding: 57px 27px;
     background-image:url(./images/logo512.png);
     background-repeat:no-repeat;
-    background-position:
-    right 75%;
+    background-position: right 75%;
     
 
+}
+main.dark {
+    /* background-image: url("./images/react-icon-dark.png");  */
+    background-color: #282D35;
+    color: white;    
 }
 .main--title{
     margin: 0;
